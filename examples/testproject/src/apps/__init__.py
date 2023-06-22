@@ -10,7 +10,7 @@ from aiogram.filters import Command
 
 from .main.handlers import router as main_router
 
-bot_routers = [main_router, {context.app_name}_router]
+bot_routers = [main_router]
 
 
 bot_base_router = Router(name="base_router")

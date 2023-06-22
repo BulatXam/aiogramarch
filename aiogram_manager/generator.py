@@ -7,9 +7,9 @@ from cookiecutter.exceptions import OutputDirExistsException
 from cookiecutter.main import cookiecutter
 from pydantic.main import BaseModel
 
-from .config import TEMPLATES_DIR, get_project_apps_dir, get_project_base_dir
+from .config import TEMPLATES_DIR, get_project_apps_dir
 from .context import AppContext, ProjectContext
-from .code import Code
+from changecode.code import CodeParse
 
 ContextType = TypeVar("ContextType", bound=BaseModel)
 
@@ -36,11 +36,13 @@ def generate_app(context: AppContext):
     _fill_template("app", context, output_dir=project_apps_dir)
 
     with open(f"{project_apps_dir}/__init__.py", "r+") as file:
-        code = Code(file=file)
-        code.add_import_from_as(
-            f".{context.app_name}.handlers", 
-            "router", 
-            f"{context.app_name}_router"
+        code = CodeParse(file=file)
+
+        routers_imports_index = code.search("from aiogram.filters import Command")[0][0] + 2
+
+        code.add_code_line(
+            f"from .{context.app_name}.handlers import router as {context.app_name}_router",
+            routers_imports_index
         )
         code.append_in_lists("bot_routers", f"{context.app_name}_router")
         code.save()
