@@ -1,7 +1,5 @@
 from pathlib import Path
 
-import click
-
 BASE_DIR = Path(__file__).parent
 TEMPLATES_DIR = Path(BASE_DIR / "templates")
 
@@ -22,7 +20,6 @@ def get_project_apps_dir():
     project_base_dir = get_project_base_dir()
 
     return Path(project_base_dir / "src" / "apps")
-
 
 
 try:

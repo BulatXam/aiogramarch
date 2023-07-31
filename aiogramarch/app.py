@@ -6,7 +6,7 @@ import sys
 from dotenv import load_dotenv
 
 from .config import get_project_base_dir
-from .generator import generate_project, generate_app
+from .template_generator import generate_project, generate_app
 from .context import ProjectContext, AppContext
 
 

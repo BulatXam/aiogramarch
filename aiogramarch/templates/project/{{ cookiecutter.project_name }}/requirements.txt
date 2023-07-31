@@ -1,0 +1,5 @@
+aerich
+tortoise-orm
+curcheck
+pydantic
+python-dotenv

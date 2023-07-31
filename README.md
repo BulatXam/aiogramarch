@@ -1,4 +1,4 @@
-# <p align="center"> Aiogram Manager</p>
+# <p align="center"> Aiogramarch </p>
 Project manager and generator for Aiogram
 
 

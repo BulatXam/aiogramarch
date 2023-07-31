@@ -1,0 +1,5 @@
+aiogram
+aiogram-manager
+loguru
+aerich
+tortoise-orm
