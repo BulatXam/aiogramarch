@@ -8,7 +8,7 @@ ___
 ## Installation
 
 ``` python
-pip install aiogram-manager
+pip install aiogramarch
 ```
 ___
 
