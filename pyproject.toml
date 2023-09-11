@@ -5,6 +5,9 @@ description = "Managing aiogram projects"
 authors = ["BulatXam <Khamdbulat@yandex.ru>"]
 license = "MIT"
 readme = "README.md"
+exclude = [
+    "examples"
+]
 
 [tool.poetry.dependencies]
 python = ">=3.7"

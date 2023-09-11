@@ -1,21 +1,19 @@
 # <p align="center"> Aiogramarch </p>
-Project manager and generator for Aiogram
+<p align="center">Project manager and generator for Aiogram</p>
 
 
 
-___
 
 ## Installation
 
 ``` python
 pip install aiogramarch
 ```
-___
 
 ## How to use
 
 ``` bash
-aiogram startproject [projectname]
+aiogramarch startproject [projectname]
 ```
 
 ``` bash
@@ -23,13 +21,17 @@ cd codingbot
 ```
 
 ``` bash
-aiogram startapp [appname]
+aiogramarch startapp [appname]
 ```
-
-___
-
-## Utils options
 
 ``` bash
-aiogram --help
+aiogramarch include redis
 ```
+
+#### To find out all the functions:
+
+``` bash
+aiogramarch --help
+```
+
+
