@@ -25,15 +25,15 @@ aiogramarch startapp [appname]
 ```
 
 ``` bash
-aiogramarch include redis
+aiogramarch includeRedis
 ```
 
 ``` bash
-aiogramarch include fastapi
+aiogramarch includeFastApi
 ```
 
 ``` bash
-aiogramarch include admin
+aiogramarch includeAdmin
 ```
 
 #### To find out all the functions:
