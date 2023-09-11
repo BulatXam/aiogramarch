@@ -28,6 +28,14 @@ aiogramarch startapp [appname]
 aiogramarch include redis
 ```
 
+``` bash
+aiogramarch include fastapi
+```
+
+``` bash
+aiogramarch include admin
+```
+
 #### To find out all the functions:
 
 ``` bash
