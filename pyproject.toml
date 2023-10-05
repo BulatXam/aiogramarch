@@ -1,12 +1,13 @@
 [tool.poetry]
 name = "aiogramarch"
-version = "1.1.6"
+version = "1.1.7"
 description = "Managing aiogram projects"
 authors = ["BulatXam <Khamdbulat@yandex.ru>"]
 license = "MIT"
 readme = "README.md"
 exclude = [
-    "examples"
+    "examples",
+    "test.py"
 ]
 
 [tool.poetry.dependencies]

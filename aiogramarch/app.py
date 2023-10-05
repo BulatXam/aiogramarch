@@ -2,16 +2,10 @@ import click
 
 import subprocess
 import sys
-import os
-
-from pathlib import Path
-from dotenv import load_dotenv
-from changecode import CodeParse
 
 from .config import get_project_base_dir
 
 from . import generator
-from . import context
 
 
 @click.group()
