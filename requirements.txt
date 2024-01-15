@@ -1,5 +1,0 @@
-cookiecutter
-pydantic==1.10.12
-click
-changecode
-pydantic_settings

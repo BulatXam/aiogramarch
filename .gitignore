@@ -3,3 +3,5 @@ test.py
 *.pyc
 dist/
 .vscode/
+cli.py
+test/*

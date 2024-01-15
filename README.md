@@ -29,7 +29,7 @@ aiogramarch includeRedis
 ```
 
 ``` bash
-aiogramarch includeFastApi
+aiogramarch includeFastapi
 ```
 
 ``` bash

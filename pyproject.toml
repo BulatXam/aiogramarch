@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiogramarch"
-version = "1.1.7"
+version = "1.2"
 description = "Managing aiogram projects"
 authors = ["BulatXam <Khamdbulat@yandex.ru>"]
 license = "MIT"
@@ -22,7 +22,7 @@ loguru=">=0.6.0"
 pytest = "^7.1.2"
 
 [tool.poetry.scripts]
-aiogramarch = 'aiogramarch.cli.app:cli'
+aiogramarch = 'aiogramarch.app:cli'
 
 [build-system]
 requires = ["poetry-core"]
